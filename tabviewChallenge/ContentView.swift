@@ -14,19 +14,22 @@ struct ContentView: View {
     var body: some View {
         
         
-        
         TabView (selection: $tabIndex){
+            
+            
             
             // MARK: Tab 1
             Text("This tab's tag is " + String(tabIndex))
-                
+            
                 .tabItem {
                     VStack{
                         Image(systemName: "allergens")
-                    Text("Tab 1")
+                        Text("Tab 1")
                     }
                 }
                 .tag(0)
+            
+            
             
             // MARK: Tab 2
             Button {
@@ -42,6 +45,9 @@ struct ContentView: View {
                 }
             }
             .tag(1)
+            
+            
+            
             
             // MARK: Tab 3
             VStack {
@@ -60,11 +66,11 @@ struct ContentView: View {
             .tag(2)
             
             
-
+            
             
         }
     }
-
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
