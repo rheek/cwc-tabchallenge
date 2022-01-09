@@ -37,7 +37,7 @@ struct ContentView: View {
             
             .tabItem {
                 VStack {
-                    Image(systemName: "arrow.uturn.right")
+                    Image(systemName: "arrow.uturn.left")
                     Text("Tab 2")
                 }
             }
